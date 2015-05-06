@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+	<head> 
+		<link rel="stylesheet" href="style.css" />
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<title>Build Tracker</title>
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+        <div id="title" onmousedown="dragMove();">
+            <h1>Build Tracker</h1>
+            <button id="close" onclick="closeWindow();">X</button>
+        </div>
+
+		<div id="menu">
+			
+			<button id="newBuild" onclick="newBuild();">New Build</button>
+
+            <h3>Saved Builds</h3>
+            <ul id="savedBuilds">
+			    <li><button id="hambow" onclick="viewBuild('hambow');">hambow</button></li>
+                <li><button id="d/d ele" onclick="viewBuild('d/d ele');">d/d ele</button></li>
+                <li><button id="QUAGGAN" onclick="showQuaggan();">QUAGGAN</button></li>
+            </ul>
+		</div>
+
+        <div id="content">
+
+            <p>Hello</p>
+
+            <div id="power" class="traitLine">
+                <div class="traitButtons" id="1">
+                    <button class="upButton" onclick="changeTrait('power', 1);">+</button>
+                    <br />
+                    <button class="downButton" onclick="changeTrait('power', -1);">-</button>
+                </div>
+                <div>
+                    <span class="traitDisplayText">4</span>
+                </div>
+                <div class="traitIcons" id="1">
+                    <img class="minor" id="adept" />
+                    <img class="major" id="adept" />
+                    <img class="minor" id="master" />
+                    <img class="major" id="master" />
+                    <img class="minor" id="grandmaster" />
+                    <img class="major" id="grandmaster" />
+                </div>
+            </div>
+            <div id="precision" class="traitLine">
+                <div class="traitButtons" id="2">
+                    <button class="upButton" onclick="changeTrait('precision', 1);">+</button>
+                    <br />
+                    <button class="downButton" onclick="changeTrait('precision', -1);">-</button>
+                </div>
+                <div class="traitIcons" id="1">
+                    <img class="minor" id="adept" />
+                    <img class="major" id="adept" />
+                    <img class="minor" id="master" />
+                    <img class="major" id="master" />
+                    <img class="minor" id="grandmaster" />
+                    <img class="major" id="grandmaster" />
+                </div>
+            </div>
+            <div id="toughness" class="traitLine">
+                <div class="traitButtons" id="3">
+                    <button class="upButton" onclick="changeTrait('toughness', 1);">+</button>
+                    <br />
+                    <button class="downButton" onclick="changeTrait('toughness', -1);">-</button>
+                </div>
+                <div class="traitIcons" id="1">
+                    <img class="minor" id="adept" />
+                    <img class="major" id="adept" />
+                    <img class="minor" id="master" />
+                    <img class="major" id="master" />
+                    <img class="minor" id="grandmaster" />
+                    <img class="major" id="grandmaster" />
+                </div>
+            </div>
+            <div id="vitality" class="traitLine">
+                <div class="traitButtons" id="4">
+                    <button class="upButton" onclick="changeTrait('vitality', 1);">+</button>
+                    <br />
+                    <button class="downButton" onclick="changeTrait('vitality', -1);">-</button>
+                </div>
+                <div class="traitIcons" id="1">
+                    <img class="minor" id="adept" />
+                    <img class="major" id="adept" />
+                    <img class="minor" id="master" />
+                    <img class="major" id="master" />
+                    <img class="minor" id="grandmaster" />
+                    <img class="major" id="grandmaster" />
+                </div>
+            </div>
+            <div id="profession" class="traitLine">
+                <div class="traitButtons" id="5">
+                    <button class="upButton" onclick="changeTrait('profession', 1);">+</button>
+                    <br />
+                    <button class="downButton" onclick="changeTrait('profession', -1);">-</button>
+                </div>
+            </div>
+            <div class="traitIcons" id="1">
+                <img class="minor" id="adept" />
+                <img class="major" id="adept" />
+                <img class="minor" id="master" />
+                <img class="major" id="master" />
+                <img class="minor" id="grandmaster" />
+                <img class="major" id="grandmaster" />
+            </div>
+        </div>
+
+
+        <img id="quaggan" width="50px" />
+	</body>
+</html>
